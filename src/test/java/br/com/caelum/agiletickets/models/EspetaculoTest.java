@@ -2,7 +2,9 @@ package br.com.caelum.agiletickets.models;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import junit.framework.Assert;
 
+import org.apache.bcel.verifier.exc.AssertionViolatedException;
 import org.junit.Test;
 
 public class EspetaculoTest {
@@ -71,6 +73,42 @@ public class EspetaculoTest {
 		ivete.getSessoes().add(sessaoComIngressosSobrando(2));
 
 		assertFalse(ivete.Vagas(5, 3));
+	}
+	
+	@Test
+	public void deveCriar2SessoesQuandoDiferencaEntrePeriodosForIgualA2DiasEPeriodicidadeDiaria(){
+		
+		assertTrue(true);
+		
+	}
+	
+	
+	@Test
+	public void deveCriar2SessoesQuandoDiferencaEntrePeriodosForIgualA2SemanasEPeriodicidadeSemanal(){
+		
+		assertTrue(true);
+		
+	}
+	
+	@Test
+	public void naoDeveCriarSessaoQuandoDataInicioMaiorQueDataFim(){
+		
+		assertTrue(true);
+		
+	}
+	
+	@Test
+	public void deveCriar1SessaoQuandoDataIncioForIgualADataFimEPeriodicidadeDiaria(){
+		
+		assertTrue(true);
+		
+	}
+	
+	@Test
+	public void deveCriar1SessaoQuandoDataIncioForIgualADataFimEPeriodicidadeSemanal(){
+		
+		assertTrue(true);
+		
 	}
 
 	private Sessao sessaoComIngressosSobrando(int quantidade) {
